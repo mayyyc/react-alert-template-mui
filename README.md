@@ -2,11 +2,13 @@
 
 ## Installation
 
+```
 npm install react-alert-template-mui
+```
 
 ## Demo
 
-https://codesandbox.io/s/elegant-khorana-up2ys?fontsize=14
+[![Edit react-alert-template-mui example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-alert-template-mui-example-up2ys?fontsize=14)
 
 ## How to Use
 
@@ -29,14 +31,11 @@ alert.show("This is an alert with title!", {
 ```javascript
 alert.show("This is an alert with extra actions!", {
   title: "Alert with extra actions!",
-  actions: (
-    <Button
-      onClick={() => {
-        setAction("Actioned!");
-      }}
-    >
-      Do Something
-    </Button>
-  )
+  actions: [
+    {
+      copy: "Do something",
+      onClick: () => setAction("Actioned!")
+    }
+  ]
 });
 ```
