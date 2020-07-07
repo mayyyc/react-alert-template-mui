@@ -13,11 +13,11 @@ interface IProps {
       copy: string;
       onClick: any;
     }[];
+    closeCopy?: string;
   };
   close: any;
-  closeCopy?: string;
 }
-const AlertDialog = ({ close, message, options, closeCopy }: IProps) => {
+const AlertDialog = ({ close, message, options }: IProps) => {
   return (
     <Dialog
       open={true}
@@ -47,7 +47,7 @@ const AlertDialog = ({ close, message, options, closeCopy }: IProps) => {
             </Button>
           ))}
         <Button onClick={close} color="primary">
-          {closeCopy || "Okay"}
+          {options.closeCopy || "Okay"}
         </Button>
       </DialogActions>
     </Dialog>
