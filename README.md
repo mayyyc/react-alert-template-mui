@@ -22,7 +22,16 @@ alert.show("Oh look, an alert!");
 
 ```javascript
 alert.show("This is an alert with title!", {
-  title: "Random Alert Title"
+  title: "Random Alert Title",
+});
+```
+
+### Change copy on close button
+
+```javascript
+alert.show("This is an alert with title!", {
+  title: "Random Alert Title",
+  closeCopy: "Cancel",
 });
 ```
 
@@ -34,8 +43,8 @@ alert.show("This is an alert with extra actions!", {
   actions: [
     {
       copy: "Do something",
-      onClick: () => setAction("Actioned!")
-    }
-  ]
+      onClick: () => setAction("Actioned!"),
+    },
+  ],
 });
 ```
