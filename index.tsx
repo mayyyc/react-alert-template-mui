@@ -15,8 +15,9 @@ interface IProps {
     }[];
   };
   close: any;
+  closeCopy?: string;
 }
-const AlertDialog = ({ close, message, options }: IProps) => {
+const AlertDialog = ({ close, message, options, closeCopy }: IProps) => {
   return (
     <Dialog
       open={true}
@@ -27,7 +28,9 @@ const AlertDialog = ({ close, message, options }: IProps) => {
     >
       <DialogTitle id="alert-dialog-slide-title">{options.title}</DialogTitle>
       <DialogContent>
-        <DialogContentText id="alert-dialog-slide-description">{message}</DialogContentText>
+        <DialogContentText id="alert-dialog-slide-description">
+          {message}
+        </DialogContentText>
       </DialogContent>
       <DialogActions>
         {options.actions &&
@@ -44,7 +47,7 @@ const AlertDialog = ({ close, message, options }: IProps) => {
             </Button>
           ))}
         <Button onClick={close} color="primary">
-          Okay
+          {closeCopy || "Okay"}
         </Button>
       </DialogActions>
     </Dialog>
