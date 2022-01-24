@@ -25,6 +25,7 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
+    "@mui/material": "^5.3.0",
     "react": "^17.0.2"
   }
 }
