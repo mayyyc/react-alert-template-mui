@@ -1,6 +1,6 @@
 {
   "name": "react-alert-template-mui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "react alert template using mui",
   "main": "dist/index.js",
   "scripts": {
@@ -21,11 +21,10 @@
     "url": "https://github.com/MMMayC/react-alert-template-mui/issues"
   },
   "homepage": "https://github.com/MMMayC/react-alert-template-mui#readme",
-  "dependencies": {
-    "@material-ui/core": "^4.5.2",
-    "react": "^16.11.0"
-  },
   "devDependencies": {
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
   }
 }
